@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda Multicapas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Agenda Multicapas</h1>
+
+  <section id="formulario">
+    <h2>Agregar Contacto</h2>
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="text" id="apellido" placeholder="Apellido" required>
+    <input type="text" id="telefono" placeholder="Teléfono" required>
+    <button onclick="agregarContacto()">Guardar</button>
+  </section>
+
+  <section class="contactos-container">
+    <button onclick="cargarContactos()">Mostrar Contactos</button>
+    <ul id="contactos"></ul>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
